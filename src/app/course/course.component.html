@@ -1,0 +1,13 @@
+<div>
+    <button (click)="getCourse()">Get Course</button>
+</div>
+
+
+<div class="courseForm">
+    <form [formGroup]="courseDetails">
+        <input placeholder="CourseName..." formControlName="courseName">
+        <input placeholder="MentorName..." formControlName="mentorName">
+        <input placeholder="Duration..." formControlName="duration">
+        <button (click)="addCourses()">Add Course</button>
+    </form>
+</div>
